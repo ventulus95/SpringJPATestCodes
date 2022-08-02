@@ -21,6 +21,11 @@ public class Action5Domain {
 
     private String name;
 
+    public Action5Domain clone(){
+        return Action5Domain.builder()
+                .name(this.name+"의 사본")
+                .build();
+    }
 }
 
 
